@@ -207,9 +207,9 @@ export default function BirthdayCard() {
             </div>
           </div>
           
-          {/* <div id="clock-box" style={{ display: showText ? "block" : "none" }}>
+          <div id="clock-box" style={{ display: showText ? "block" : "none" }}>
              <span id="clock">{timeText}</span>
-          </div>  */}
+          </div> 
 
           <canvas 
             id="canvas" 
