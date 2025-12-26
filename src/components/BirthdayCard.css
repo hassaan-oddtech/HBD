@@ -1,0 +1,83 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.birthday-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  overflow: hidden; /* Important so scaled element doesn't cause scrollbars */
+}
+
+#main {
+  /* This container helps center the scaled content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+#wrap {
+  position: relative;
+  /* These dimensions must remain fixed so the canvas logic works */
+  width: 1100px;
+  height: 680px;
+  margin: 0 auto;
+  /* Transform origin center ensures it shrinks towards the middle of the screen */
+  transform-origin: center center;
+}
+
+#text {
+  width: 400px;
+  height: 425px;
+  left: 60px;
+  top: 80px;
+  position: absolute;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#code {
+  display: none;
+  color: rgb(196, 255, 255);
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: bold;
+}
+
+.say {
+  margin-left: 5px;
+}
+
+#clock-box {
+  position: absolute;
+  left: 60px;
+  bottom: 30px;
+  font-size: 16px;
+  color: white;
+  display: none;
+  font-family: sans-serif;
+}
+
+#clock {
+  font-weight: bold;
+  color: #ffc0cb;
+}
+
+#canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.hand {
+  cursor: pointer;
+}
